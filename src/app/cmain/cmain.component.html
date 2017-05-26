@@ -1,5 +1,5 @@
-<md-toolbar color="primary">
-    <span>itrade app</span>
+<md-toolbar color="secondary">
+    <span class="app-title" >it Relax</span>
     <span class="spacer"></span>
     <button md-icon-button [mdMenuTriggerFor]="menu">
       <md-icon>more_vert</md-icon>
@@ -21,11 +21,9 @@
 </md-toolbar>
 <md-tab-group>
   <md-tab label="Coffee">
-    <h1>Some tab content</h1>
-    <p>...</p>
+    <app-ccoffee></app-ccoffee>
   </md-tab>
   <md-tab label="Lunch Box">
-    <h1>Some more tab content</h1>
-    <p>...</p>
+    <app-cbento></app-cbento>
   </md-tab>
 </md-tab-group>
