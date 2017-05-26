@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ccoffee.component.css']
 })
 export class CcoffeeComponent implements OnInit {
+  daily = 3;
+  monthly = 30;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  add(){
+    this.daily++;
+    this.monthly++;
   }
 
 }
