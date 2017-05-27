@@ -1,15 +1,16 @@
 import { Injectable } from '@angular/core';
 
-
 @Injectable()
-export class LoginService {
+export class BentoService {
 
   constructor() { }
 
-  login(email: string, password: string){
+  find(month:string){
+
   }
 
-  logout(){
+  save(){
+
   }
 
 }
