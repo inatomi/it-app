@@ -1,19 +1,17 @@
 import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
-import { CcoffeeComponent } from './ccoffee/ccoffee.component';
-import { CbentoComponent } from './cbento/cbento.component';
+import { CloginComponent } from './clogin/clogin.component';
+import { CmainComponent } from './cmain/cmain.component';
 
 
 const appRoutes: Routes = [
     {
-        path: 'coffee',
-        component: CcoffeeComponent
+        path: '',
+        component: CloginComponent,
     },
-
     {
-        path: 'bento',
-        component: CbentoComponent
+        path: 'main',
+        component: CmainComponent
     },
 ];
 

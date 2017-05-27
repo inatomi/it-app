@@ -1,3 +1,21 @@
-<p>
-  clogin works!
-</p>
+<div style="text-align:center;background-image: url(assets/login.jpeg);">
+<br>
+<h1 class="app-title">it Relax</h1>
+<br>
+<md-card>
+<md-input-container>
+  <input mdInput placeholder="email" #email>
+</md-input-container>
+<md-input-container>
+  <input type="password" mdInput placeholder="password" #password>
+</md-input-container>
+<p>{{message}}</p>
+<button md-raised-button (click)="login(email.value, password.value)">login</button>
+</md-card>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</div>

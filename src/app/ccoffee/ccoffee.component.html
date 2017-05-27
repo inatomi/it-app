@@ -1,11 +1,14 @@
 <md-card>
 <img md-card-image src="assets/coffee.jpeg">
 </md-card>
-<button md-fab class="example-fab" (click)="add()">
+<md-grid-list cols="2">
+  <md-grid-tile><div class="daily"><h1>{{daily}}</h1>Daily</div></md-grid-tile>
+  <md-grid-tile><div class="montly"><h1>{{monthly}}</h1>Monthly</div></md-grid-tile>
+</md-grid-list>
+<br>
+<button md-fab class="fab" (click)="order()">
     <md-icon>add</md-icon>
 </button>
-
-
-
-
-
+<br>
+<br>
+<br>

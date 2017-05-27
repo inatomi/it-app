@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-clogin',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./clogin.component.css']
 })
 export class CloginComponent implements OnInit {
-
-  constructor() { }
+  message : string;
+  constructor(private router: Router) { }
 
   ngOnInit() {
+    
+  }
+
+  login(email: string, password: string){
+    let link = ['/main']; 
+    this.router.navigate(link);
   }
 
 }
